@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">      
+    
+  
+  
+    <title>Document</title>
+</head>
+<body>
+  <header class="header-info">
+    <div class="container">
+        <span class="logo">SushiJu</span>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="começo.html"><i class="fa-solid fa-bars menu-icon"></i>Catálogo</a></li>
+                <li><a href="/projeto/contato.html"><i class="fa-solid fa-phone"></i>Contato</a></li>
+            </ul>
+        </nav>
+<div class="pesquisa">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" placeholder="Buscar itens...">
+</div>
+        <div class="acoes">
+            <a href="carrinho.html" class="carrinho">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="carrinho-count" class="contador">0</span>
+            </a>
+
+            <a href="favoritos.html" class="favoritos">
+                <i class="fa-regular fa-heart"></i>
+                <span id="favoritos-count" class="contador">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+<main class="main">
+
+    <div class="bem-vindo-carrinho">
+        <h1>Seu carrinho</h1>
+    </div>
+
+    <section class="carrinho">
+
+        <article class="item-carrinho">
+            <img src="https://picsum.photos/150/150" alt="Prato japonês">
+
+            <div class="info-produto">
+                <h3>Sushi de Salmão</h3>
+                <p>R$ 39,90</p>
+            </div>
+
+            <div class="quantidade">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+
+            <button class="remover">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </article>
+
+        <article class="item-carrinho">
+            <img src="https://picsum.photos/150/150" alt="Prato japonês">
+
+            <div class="info-produto">
+                <h3>Temaki Salmão</h3>
+                <p>R$ 34,90</p>
+            </div>
+
+            <div class="quantidade">
+                <button>-</button>
+                <span>2</span>
+                <button>+</button>
+            </div>
+
+            <button class="remover">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </article>
+
+    </section>
+
+    <section class="resumo-pedido">
+        <h2>Resumo do pedido</h2>
+
+        <p>Subtotal: <strong>R$ 109,70</strong></p>
+        <p>Entrega: <strong>Grátis</strong></p>
+
+        <h3>Total: R$ 109,70</h3>
+
+        <button class="btn-finalizar">
+            Finalizar compra
+        </button>
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>    
+</body>
+</html>
