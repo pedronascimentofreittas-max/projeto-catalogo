@@ -27,7 +27,7 @@
         </nav>
 <div class="pesquisa">
     <i class="fa-solid fa-magnifying-glass"></i>
-    <input type="text" placeholder="Buscar itens...">
+    <input type="text" placeholder="Buscar itens..." id="pesquisa">
 </div>
         <div class="acoes">
             <a href="carrinho.html" class="carrinho">
@@ -48,58 +48,236 @@
                 ✦ SABORES DO JAPÃO</div>
         </section>
         <div class="tag">
-            <h1>Descubra os melhores pratos da <span>culinária japonesa.</span> </h1>
+            <h1>Descubra os melhores pratos da <span id="span-local">culinária japonesa.</span> </h1>
         </div>
-        <section class="filtros">
-            <div class="categorias">
-                <a href="#" class="categoria-btn">Todos</a>
-                <a href="#">Sushis</a>
-                <a href="#">Temakis</a>
-                <a href="#">Combinados</a>
-                <a href="#">bebidas</a>
-            </div>
-            <div class="info-catalogo">
-                <span>6 itens </span>
-            </div>
-        </section>
-        <section class="catalogo">
-            <!-- template -->
-            <article class="card">
-                <img src="https://picsum.photos/400/300" alt="Prato japonês">
-                <h3>Sushi de Salmão</h3>
-                <p>R$ 39,90</p>
-            </article>
-            <article class="card">
-                <img src="https://picsum.photos/400/300" alt="Prato japonês">
-                <h3>Sushi de Salmão</h3>
-                <p>R$ 39,90</p>
-            </article>
-            <article class="card">
-                <img src="https://picsum.photos/400/300" alt="Prato japonês">
-                <h3>Sushi de Salmão</h3>
-                <p>R$ 39,90</p>
-            </article>
-            <article class="card">
-                <img src="https://picsum.photos/400/300" alt="Prato japonês">
-                <h3>Sushi de Salmão</h3>
-                <p>R$ 39,90</p>
-            </article>
-            <article class="card">
-                <img src="https://picsum.photos/400/300" alt="Prato japonês">
-                <h3>Sushi de Salmão</h3>
-                <p>R$ 39,90</p>
-            </article>
-            <article class="card">
-                <img src="https://picsum.photos/400/300" alt="Prato japonês">
-                <h3>Sushi de Salmão</h3>
-                <p>R$ 39,90</p>
-            </article>
+    <section class="filtros">
+    <div class="categorias">
 
+        <button class="categoria-btn" data-categoria="Todos">
+            Todos
+        </button>
+
+        <button class="categoria-btn" data-categoria="Sushi">
+            Sushi
+        </button>
+
+        <button class="categoria-btn" data-categoria="Temaki">
+            Temaki
+        </button>
+
+        <button class="categoria-btn" data-categoria="Frito">
+            Frito
+        </button>
+
+        <button class="categoria-btn" data-categoria="Combo">
+            Combo
+        </button>
+
+        <button class="categoria-btn" data-categoria="Prato Quente">
+            Prato Quente
+        </button>
+
+        <button class="categoria-btn" data-categoria="Entrada">
+            Entrada
+        </button>
+
+        <button class="categoria-btn" data-categoria="Sopa">
+            Sopa
+        </button>
+
+        <button class="categoria-btn" data-categoria="Sobremesa">
+            Sobremesa
+        </button>
+
+    </div>
+</section>
+        
+        <section class="catalogo" id="catalogo">
+            <!-- template -->
+         <article class="card" data-categoria="Sushi">
+    <img src="/projeto/imagens/sushi-1.jpg" alt="Sushi de Salmão" loading="lazy">
+
+    <h3>Sushi de Salmão</h3>
+
+    <p>🍣 Sushi</p>
+    <p class="descricao">Salmão fresco sobre arroz temperado.</p>
+
+    <p>R$ 39,90</p>
+
+    <div class="acoes-card">
+        <div class="quantidade">
+            <button class="diminuir">-</button>
+            <span class="qtd">1</span>
+            <button class="aumentar">+</button>
+        </div>
+
+        <button class="comprar">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Comprar
+        </button>
+    </div>
+</article>
+<article class="card" data-categoria="Temaki">
+    <img src="/projeto/imagens/temaki-salmao.jpg" alt="Temaki de Salmão" loading="lazy">
+
+    <h3>Temaki de Salmão</h3>
+
+    <p>🌯 Temaki</p>
+    <p class="descricao">Alga recheada com salmão e cream cheese.</p>
+
+    <p>R$ 34,90</p>
+
+    <div class="acoes-card">
+        <div class="quantidade">
+            <button class="diminuir">-</button>
+            <span class="qtd">1</span>
+            <button class="aumentar">+</button>
+        </div>
+
+        <button class="comprar">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Comprar
+        </button>
+    </div>
+</article>
+<article class="card" data-categoria="Frito">
+    <img src="/projeto/imagens/hot rolls.jpg" alt="Imagem" loading="lazy">
+
+    <h3>Hot Roll</h3>
+
+    <p>🔥 Frito</p>
+<p class="descricao">Sushi empanado e frito, crocante por fora.</p>
+    <p>R$ 29,90</p>
+
+    <div class="acoes-card">
+        <div class="quantidade">
+            <button class="diminuir">-</button>
+            <span class="qtd">1</span>
+            <button class="aumentar">+</button>
+        </div>
+
+        <button class="comprar">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Comprar
+        </button>
+    </div>
+</article>
+<article class="card" data-categoria="Combo">
+    <img src="/projeto/imagens/combo.jpg" alt="Combo 20 Peças" loading="lazy">
+
+    <h3>Combo 20 Peças</h3>
+
+    <p>🍱 Combo</p>
+<p class="descricao">Seleção variada de sushis e sashimis.</p>
+    <p>R$ 79,90</p>
+
+    <div class="acoes-card">
+        <div class="quantidade">
+            <button class="diminuir">-</button>
+            <span class="qtd">1</span>
+            <button class="aumentar">+</button>
+        </div>
+
+        <button class="comprar">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Comprar
+        </button>
+    </div>
+</article>
+<article class="card" data-categoria="Sopa,Prato Quente">
+    <img src="/projeto/imagens/yakisoba.jpg" alt="Yakisoba" loading="lazy">
+
+    <h3>Yakisoba</h3>
+
+    <p>🍜 Prato Quente</p>
+<p class="descricao">Macarrão oriental com legumes e carne.</p>
+    <p>R$ 44,90</p>
+
+    <div class="acoes-card">
+        <div class="quantidade">
+            <button class="diminuir">-</button>
+            <span class="qtd">1</span>
+            <button class="aumentar">+</button>
+        </div>
+
+        <button class="comprar">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Comprar
+        </button>
+    </div>
+</article>
+<article class="card" data-categoria="Entrada,Frito">
+    <img src="/projeto/imagens/guiozá.jpg" alt="Guioza" loading="lazy">
+
+    <h3>Guioza</h3>
+
+    <p>🥟 Entrada</p>
+<p class="descricao">Pastel japonês recheado e grelhado.</p>
+    <p>R$ 24,90</p>
+
+    <div class="acoes-card">
+        <div class="quantidade">
+            <button class="diminuir">-</button>
+            <span class="qtd">1</span>
+            <button class="aumentar">+</button>
+        </div>
+
+        <button class="comprar">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Comprar
+        </button>
+    </div>
+</article>
+<article class="card" data-categoria="Sopa">
+    <img src="/projeto/imagens/missoshiru.jpg" alt="Missoshiru" loading="lazy">
+
+    <h3>Missoshiru</h3>
+
+    <p>🍲 Sopa</p>
+<p class="descricao">Sopa japonesa preparada com missô.</p>
+    <p>R$ 18,90</p>
+
+    <div class="acoes-card">
+        <div class="quantidade">
+            <button class="diminuir">-</button>
+            <span class="qtd">1</span>
+            <button class="aumentar">+</button>
+        </div>
+
+        <button class="comprar">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Comprar
+        </button>
+    </div>
+</article>
+<article class="card" data-categoria="Sobremesa">
+    <img src="/projeto/imagens/mochis.jpg" alt="Mochi" loading="lazy">
+
+    <h3>Mochi</h3>
+
+    <p>🍡 Sobremesa</p>
+<p class="descricao">Doce japonês de massa de arroz.</p>
+    <p>R$ 16,90</p>
+
+    <div class="acoes-card">
+        <div class="quantidade">
+            <button class="diminuir">-</button>
+            <span class="qtd">1</span>
+            <button class="aumentar">+</button>
+        </div>
+
+        <button class="comprar">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Comprar
+        </button>
+    </div>
+</article>
+          
         </section>
 
     </main>
     <footer class="rodape">
-        <p>@joao pedro nascimento de freitas .2026 </p>
+        <p> @ Joao pedro nascimento de freitas. Todos os direitos reservados. 2026 </p>
     </footer>
     <script src="script.js"></script>
 
