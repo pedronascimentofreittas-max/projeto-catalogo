@@ -90,20 +90,33 @@
         </button>
 
     </div>
+    <div class="ordenacao">
+    <select id="ordenar">
+        <option value="padrao">Ordenar por</option>
+        <option value="nome">Nome (A-Z)</option>
+        <option value="preco-menor">Menor preço</option>
+        <option value="preco-maior">Maior preço</option>
+    </select>
+</div>
 </section>
         
         <section class="catalogo" id="catalogo">
             <!-- template -->
-         <article class="card" data-categoria="Sushi">
+         <article class="card"
+          data-categoria="Sushi"
+          data-id="0"
+          data-preco="39.90">
     <img src="/projeto/imagens/sushi-1.jpg" alt="Sushi de Salmão" loading="lazy">
 
     <h3>Sushi de Salmão</h3>
 
     <p>🍣 Sushi</p>
     <p class="descricao">Salmão fresco sobre arroz temperado.</p>
-
+ 
     <p>R$ 39,90</p>
-
+ <button class="favoritar">
+        <i class="fa-regular fa-heart"></i>
+    </button>
     <div class="acoes-card">
         <div class="quantidade">
             <button class="diminuir">-</button>
@@ -117,7 +130,10 @@
         </button>
     </div>
 </article>
-<article class="card" data-categoria="Temaki">
+<article class="card"
+ data-categoria="Temaki"
+ data-id="1"
+ data-preco="34.90">
     <img src="/projeto/imagens/temaki-salmao.jpg" alt="Temaki de Salmão" loading="lazy">
 
     <h3>Temaki de Salmão</h3>
@@ -126,7 +142,9 @@
     <p class="descricao">Alga recheada com salmão e cream cheese.</p>
 
     <p>R$ 34,90</p>
-
+ <button class="favoritar">
+        <i class="fa-regular fa-heart"></i>
+    </button>
     <div class="acoes-card">
         <div class="quantidade">
             <button class="diminuir">-</button>
@@ -140,15 +158,22 @@
         </button>
     </div>
 </article>
-<article class="card" data-categoria="Frito">
+<article class="card"
+data-preco="29.90"
+data-id="2"
+data-categoria="Frito">
     <img src="/projeto/imagens/hot rolls.jpg" alt="Imagem" loading="lazy">
 
     <h3>Hot Roll</h3>
 
     <p>🔥 Frito</p>
 <p class="descricao">Sushi empanado e frito, crocante por fora.</p>
-    <p>R$ 29,90</p>
 
+
+    <p>R$ 29,90</p>
+ <button class="favoritar">
+        <i class="fa-regular fa-heart"></i>
+    </button>
     <div class="acoes-card">
         <div class="quantidade">
             <button class="diminuir">-</button>
@@ -162,15 +187,22 @@
         </button>
     </div>
 </article>
-<article class="card" data-categoria="Combo">
+<article class="card"
+ data-categoria="Combo" 
+ data-id="3"
+ data-preco="79.90">
+ 
     <img src="/projeto/imagens/combo.jpg" alt="Combo 20 Peças" loading="lazy">
 
     <h3>Combo 20 Peças</h3>
 
     <p>🍱 Combo</p>
 <p class="descricao">Seleção variada de sushis e sashimis.</p>
-    <p>R$ 79,90</p>
 
+    <p>R$ 79,90</p>
+ <button class="favoritar">
+        <i class="fa-regular fa-heart"></i>
+    </button>
     <div class="acoes-card">
         <div class="quantidade">
             <button class="diminuir">-</button>
@@ -184,15 +216,22 @@
         </button>
     </div>
 </article>
-<article class="card" data-categoria="Sopa,Prato Quente">
+<article class="card"
+data-id="4"
+ data-categoria="Sopa,Prato Quente" 
+data-preco="44.90">
+
     <img src="/projeto/imagens/yakisoba.jpg" alt="Yakisoba" loading="lazy">
 
     <h3>Yakisoba</h3>
 
     <p>🍜 Prato Quente</p>
 <p class="descricao">Macarrão oriental com legumes e carne.</p>
-    <p>R$ 44,90</p>
 
+    <p>R$ 44,90</p>
+ <button class="favoritar">
+        <i class="fa-regular fa-heart"></i>
+    </button>
     <div class="acoes-card">
         <div class="quantidade">
             <button class="diminuir">-</button>
@@ -206,15 +245,21 @@
         </button>
     </div>
 </article>
-<article class="card" data-categoria="Entrada,Frito">
+<article class="card" 
+data-id="5"
+data-categoria="Entrada"
+ data-preco="24.90">
     <img src="/projeto/imagens/guiozá.jpg" alt="Guioza" loading="lazy">
 
     <h3>Guioza</h3>
 
     <p>🥟 Entrada</p>
 <p class="descricao">Pastel japonês recheado e grelhado.</p>
+ 
     <p>R$ 24,90</p>
-
+ <button class="favoritar">
+        <i class="fa-regular fa-heart"></i>
+    </button>
     <div class="acoes-card">
         <div class="quantidade">
             <button class="diminuir">-</button>
@@ -228,15 +273,21 @@
         </button>
     </div>
 </article>
-<article class="card" data-categoria="Sopa">
+<article class="card"
+data-id="6"
+data-categoria="Sopa"
+ data-preco="18.90">
     <img src="/projeto/imagens/missoshiru.jpg" alt="Missoshiru" loading="lazy">
 
     <h3>Missoshiru</h3>
 
     <p>🍲 Sopa</p>
 <p class="descricao">Sopa japonesa preparada com missô.</p>
-    <p>R$ 18,90</p>
 
+    <p>R$ 18,90</p>
+ <button class="favoritar">
+        <i class="fa-regular fa-heart"></i>
+    </button>
     <div class="acoes-card">
         <div class="quantidade">
             <button class="diminuir">-</button>
@@ -250,15 +301,21 @@
         </button>
     </div>
 </article>
-<article class="card" data-categoria="Sobremesa">
+<article class="card"
+ data-categoria="Sobremesa"
+ data-id="7"
+ data-preco="16.90">
     <img src="/projeto/imagens/mochis.jpg" alt="Mochi" loading="lazy">
 
     <h3>Mochi</h3>
 
     <p>🍡 Sobremesa</p>
 <p class="descricao">Doce japonês de massa de arroz.</p>
-    <p>R$ 16,90</p>
 
+    <p>R$ 16,90</p>
+ <button class="favoritar">
+        <i class="fa-regular fa-heart"></i>
+    </button>
     <div class="acoes-card">
         <div class="quantidade">
             <button class="diminuir">-</button>
@@ -279,6 +336,7 @@
     <footer class="rodape">
         <p> @ Joao pedro nascimento de freitas. Todos os direitos reservados. 2026 </p>
     </footer>
+    <script src="produtos.js"></script>
     <script src="script.js"></script>
 
 </body>

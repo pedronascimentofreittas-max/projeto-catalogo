@@ -20,7 +20,7 @@
 
         <nav class="menu">
             <ul>
-                <li><a href="começo.html"><i class="fa-solid fa-bars menu-icon"></i>Catálogo</a></li>
+                <li><a href="comeco.html"><i class="fa-solid fa-bars menu-icon"></i>Catálogo</a></li>
                 <li><a href="/projeto/contato.html"><i class="fa-solid fa-phone"></i>Contato</a></li>
             </ul>
         </nav>
@@ -48,63 +48,60 @@
     </div>
 
     <section class="carrinho">
+<template id="card-template">
 
-        <article class="item-carrinho">
-            <img src="https://picsum.photos/150/150" alt="Prato japonês">
+    <article class="card">
 
-            <div class="info-produto">
-                <h3>Sushi de Salmão</h3>
-                <p>R$ 39,90</p>
-            </div>
+        <img class="card-img" src="" alt="">
 
-            <div class="quantidade">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-            </div>
+        <h3 class="card-nome"></h3>
 
-            <button class="remover">
-                <i class="fa-solid fa-trash"></i>
-            </button>
-        </article>
+        <p class="card-categoria"></p>
 
-        <article class="item-carrinho">
-            <img src="https://picsum.photos/150/150" alt="Prato japonês">
+        <p class="card-descricao"></p>
 
-            <div class="info-produto">
-                <h3>Temaki Salmão</h3>
-                <p>R$ 34,90</p>
-            </div>
+        <p class="card-preco"></p>
 
-            <div class="quantidade">
-                <button id="remover">-</button>
-                <span>1</span>
-                <button id="adicionar">+</button>
-            </div>
-
-            <button class="remover">
-                <i class="fa-solid fa-trash"></i>
-            </button>
-        </article>
-
-    </section>
-
-    <section class="resumo-pedido">
-        <h2>Resumo do pedido</h2>
-
-        <p>Subtotal: <strong></strong></p>
-        <p>Entrega: <strong></strong></p>
-
-        <h3>total:</h3>
-
-        <button class="btn-finalizar">
-            Finalizar compra
+        <button class="favoritar">
+            <i class="fa-regular fa-heart"></i>
         </button>
+
+        <div class="acoes-card">
+
+            <div class="quantidade">
+                <button class="diminuir">-</button>
+                <span class="qtd">1</span>
+                <button class="aumentar">+</button>
+            </div>
+
+          <button class="remover">
+    <i class="fa-solid fa-trash"></i>
+    Remover
+</button>
+
+        </div>
+
+    </article>
+
+</template>
     </section>
+
+ <section class="resumo-pedido">
+    <h2>Resumo do pedido</h2>
+
+    <p>Subtotal: <strong id="subtotal-valor">R$ 0,00</strong></p>
+    <p>Entrega: <strong id="entrega-valor">Grátis</strong></p>
+
+    <h3>Total: <span id="total-valor">R$ 0,00</span></h3>
+
+    <button class="btn-finalizar">
+        Finalizar compra
+    </button>
+</section>
 
 </main>
 
-
+<script src="produtos.js"></script>
 <script src="script.js"></script>    
 </body>
 </html>

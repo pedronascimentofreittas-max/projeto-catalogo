@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seus itens favoritos </title>
 </head>
@@ -20,7 +19,7 @@
             <span class="logo">Catálogo</span>
             <nav class="menu">
                 <ul>
-                    <li><a href="começo.html"><i class="fa-solid fa-bars menu-icon"></i>Catálogo</a></li>
+                    <li><a href="comeco.html"><i class="fa-solid fa-bars menu-icon"></i>Catálogo</a></li>
                     <li><a href="/projeto/contato.html"><i class="fa-solid fa-phone"></i>Contato</a></li>
                 </ul>
             </nav>
@@ -45,28 +44,48 @@
             <h1>Seus itens favoritos</h1>
         </div>
         <section class="catalogo">
-            <!--<template>-->
-            <article class="card">
-                <img src="https://picsum.photos/400/300" alt="Prato japonês">
-                <h3>Sushi de Salmão</h3>
-                <p>R$ 39,90</p>
-                <div class="acoes">
-                    <div class="quantidade">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-                    <button class="comprar">
-                        🛒 Comprar
-                    </button>
-                </div>
-            </article>
-            <!--</template>-->
+<template id="card-template">
+
+    <article class="card">
+
+        <img class="card-img" src="" alt="">
+
+        <h3 class="card-nome"></h3>
+
+        <p class="card-categoria"></p>
+
+        <p class="card-descricao"></p>
+
+        <p class="card-preco"></p>
+
+        <button class="favoritar">
+            <i class="fa-regular fa-heart"></i>
+        </button>
+
+        <div class="acoes-card">
+
+            <div class="quantidade">
+                <button class="diminuir">-</button>
+                <span class="qtd">1</span>
+                <button class="aumentar">+</button>
+            </div>
+
+            <button class="comprar">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Comprar
+            </button>
+
+        </div>
+
+    </article>
+
+</template>
         </section>
     </main>
     <footer class="rodape">
         <p> @ Joao pedro nascimento de freitas. Todos os direitos reservados. 2026 </p>
     </footer>
+    <script src="produtos.js"></script>
     <script src="script.js"></script>
 </body>
 
