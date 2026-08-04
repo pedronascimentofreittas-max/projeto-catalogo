@@ -25,7 +25,7 @@ const produtos = [
         emoji: "🔥",
         descricao: "Sushi empanado e frito, crocante por fora.",
         preco: 29.90,
-        imagem: "imagens/hot rolls.jpg"
+        imagem: "imagens/hotRolls.jpg"
     },
     {
         id: "3",

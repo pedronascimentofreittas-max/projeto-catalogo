@@ -722,6 +722,12 @@ h3 {
   align-items: center;
   gap: 25px;
 }
+.acoes-card {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .acoes a {
   position: relative;
