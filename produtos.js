@@ -7,7 +7,7 @@ const produtos = [
         emoji: "🍣",
         descricao: "Salmão fresco sobre arroz temperado.",
         preco: 39.90,
-        imagem: "/projeto/imagens/sushi-1.jpg"
+        imagem: "/imagens/sushi-1.jpg"
     },
     {
         id: "1",
@@ -16,7 +16,7 @@ const produtos = [
         emoji: "🌯",
         descricao: "Alga recheada com salmão e cream cheese.",
         preco: 34.90,
-        imagem: "/projeto/imagens/temaki-salmao.jpg"
+        imagem: "/imagens/temaki-salmao.jpg"
     },
     {
         id: "2",
@@ -25,7 +25,7 @@ const produtos = [
         emoji: "🔥",
         descricao: "Sushi empanado e frito, crocante por fora.",
         preco: 29.90,
-        imagem: "/projeto/imagens/hot rolls.jpg"
+        imagem: "/imagens/hot rolls.jpg"
     },
     {
         id: "3",
@@ -34,7 +34,7 @@ const produtos = [
         emoji: "🍱",
         descricao: "Seleção variada de sushis e sashimis.",
         preco: 79.90,
-        imagem: "/projeto/imagens/combo.jpg"
+        imagem: "/imagens/combo.jpg"
     },
     {
         id: "4",
@@ -43,7 +43,7 @@ const produtos = [
         emoji: "🍜",
         descricao: "Macarrão oriental com legumes e carne.",
         preco: 44.90,
-        imagem: "/projeto/imagens/yakisoba.jpg"
+        imagem: "/imagens/yakisoba.jpg"
     },
     {
         id: "5",
@@ -52,7 +52,7 @@ const produtos = [
         emoji: "🥟",
         descricao: "Pastel japonês recheado e grelhado.",
         preco: 24.90,
-        imagem: "/projeto/imagens/guiozá.jpg"
+        imagem: "/imagens/guiozá.jpg"
     },
     {
         id: "6",
@@ -61,7 +61,7 @@ const produtos = [
         emoji: "🍲",
         descricao: "Sopa japonesa preparada com missô.",
         preco: 18.90,
-        imagem: "/projeto/imagens/missoshiru.jpg"
+        imagem: "/imagens/missoshiru.jpg"
     },
     {
         id: "7",
@@ -70,6 +70,6 @@ const produtos = [
         emoji: "🍡",
         descricao: "Doce japonês de massa de arroz.",
         preco: 16.90,
-        imagem: "/projeto/imagens/mochis.jpg"
+        imagem: "/imagens/mochis.jpg"
     },
 ];
