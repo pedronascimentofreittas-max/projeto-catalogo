@@ -30,6 +30,7 @@ body,html {
   --cor-fundo-cinza: #e2dfdf;
   --cor-branco: #fff;
   --cor-preto: #111;
+--cor-amarelo: #D4AF37; 
   --transicao-padrao: 0.3s;
 }
 
@@ -759,4 +760,25 @@ h3 {
   align-items: center;
   justify-content: center;
   padding: 0 3px;
+}
+/* classList */
+
+.title{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--cor-secundaria);
+}
+/*#span-local -adicionar mais especificidade*/
+#span-local.chamar{
+  color: var(--cor-amarelo);
+  font-size: 1.9rem;
+}
+#span-local .texto-busca {
+    color: #d4a017;
+    text-transform: none;
+     letter-spacing: 0.5px;
+       font-size: 18px;
+    font-weight: 600;
+     margin: 20px 0 10px 0;
 }

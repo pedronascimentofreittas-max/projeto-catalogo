@@ -1,3 +1,6 @@
+
+
+
 // ===========================================
 // ESTADO GLOBAL (carrinho + favoritos)
 // ===========================================
@@ -358,3 +361,36 @@ function finalizarCompra() {
 atualizarFavoritos();
 renderizarFavoritos();
 renderizarCarrinho();
+
+
+
+
+const meuTitulo=document.querySelector("h1")
+
+meuTitulo.classList.add("title")
+
+
+const chamarAtencao=document.querySelector("#span-local")
+chamarAtencao.classList.add("chamar")
+console.log(chamarAtencao)
+const texto = document.createElement("span");
+
+texto.textContent = "Encontre o que deseja!!";
+
+texto.classList.add("texto-busca");
+
+const elemento = document.querySelector("#span-local");
+
+elemento.append(texto);
+
+
+
+
+
+
+
+
+
+
+
+
